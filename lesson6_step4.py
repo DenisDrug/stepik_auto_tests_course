@@ -18,7 +18,7 @@ def get_chrome_options():
 
 options = get_chrome_options()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
-driver = webdriver.Chrome(executable_path='../curses/chromedriver.exe', options=options)
+driver = webdriver.Chrome(executable_path='../curses/tests/chromedriver.exe', options=options)
 driver.get(link)
 
 get_text1 = driver.find_element(By.XPATH, "//input[@name='first_name']")
